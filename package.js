@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'yogiben:admin-settings',
+  name: 'miniwe:yogiben-admin-settings',
   summary: 'Key value store for yogiben:admin',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/yogiben/meteor-admin-settings'
 });
 
@@ -14,16 +14,16 @@ Package.onUse(function(api) {
     'underscore',
     'templating',
     'tracker',
-    'iron:router@1.0.3',
-    'aldeed:autoform@4.2.1',
+    'iron:router@1.0.9',
+    'aldeed:autoform@5.3.0',
   ], both);
 
   api.addFiles([
     'lib/both/collections.coffee',
-  	'lib/both/router.coffee',
+    'lib/both/router.coffee',
     'lib/both/types.coffee'
   ], both);
-  
+
   api.addFiles([
     'lib/client/views/admin-settings.html',
     'lib/client/views/admin-settings-table.html',
